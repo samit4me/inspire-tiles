@@ -6,6 +6,12 @@
  - url: /
    static_files: www/index.html
    upload: www/index.html
+   expiration: "1h"
+
+ - url: /review(.*)
+   static_files: www/review/index.html
+   upload: www/review/index.html
+   expiration: "1h"
 
  - url: /(.*)
    static_files: www/\1

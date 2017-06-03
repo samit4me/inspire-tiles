@@ -200,6 +200,24 @@
    
 </head>
 <body>
+  <script>
+    window.fbAsyncInit = function() {
+      FB.init({
+        appId      : '221081361740240',
+        xfbml      : true,
+        version    : 'v2.9'
+      });
+      FB.AppEvents.logPageView();
+    };
+
+    (function(d, s, id){
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) {return;}
+      js = d.createElement(s); js.id = id;
+      js.src = "//connect.facebook.net/en_US/sdk.js";
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));
+  </script>
 
   <section>
     <div>
@@ -249,6 +267,7 @@
     <div class="content">
       <h3 class="business">ABN: 44 732 558 072</h3>
       <p class="copyright">© Inspire TILES | All Rights Reserved</p>
+      <div class="fb-like" data-href="https://www.facebook.com/inspiretiles/" data-layout="standard" data-action="like" data-size="large" data-show-faces="true" data-share="true"></div>
     </div>
   </footer>
 

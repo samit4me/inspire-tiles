@@ -1,8 +1,8 @@
 {
-  "name": "Inspire TILES",
+  "name": "Inspire Tiles",
   "theme_color": "#660099",
   "background_color": "#660099",
-  "display": "browser",
+  "display": "fullscreen",
   "Scope": "/",
   "start_url": "/",
   "icons": [

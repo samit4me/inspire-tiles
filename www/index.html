@@ -51,9 +51,12 @@
       height: 89vh;
       justify-content: center;
       text-align: center;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
       background-size: cover;
       background-repeat: no-repeat;
-      background-attachment: fixed;
+      background-attachment: scroll;
       background-image: url('images/hero-1250.jpg');
       -webkit-mask-image: linear-gradient(0deg, transparent 30px, white 30px), linear-gradient(-135deg, white 15px, transparent 15px), linear-gradient(135deg, white 15px, transparent 15px);
       -webkit-mask-position: left bottom;
@@ -129,6 +132,17 @@
       color: #fff
     }
 
+    footer .fb-group {
+      display: -webkit-flex;
+      display: flex;
+      -webkit-flex-direction: row;
+      flex-direction: row;
+    }
+
+    footer .fb-group a {
+      margin: 0 10px;
+    }
+
     .copyright {
       font-size: .9em;
       color: #ccc;
@@ -180,8 +194,29 @@
 
   <!-- Fallback application metadata for legacy browsers -->
   <meta name="mobile-web-app-capable" content="yes"> <!-- Support for Chrome M31+ -->
+
+  <link rel="apple-touch-icon-precomposed" sizes="57x57" href="images/apple-touch-icon-57x57.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/apple-touch-icon-114x114.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="images/apple-touch-icon-72x72.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="images/apple-touch-icon-144x144.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="60x60" href="images/apple-touch-icon-60x60.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="120x120" href="images/apple-touch-icon-120x120.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="76x76" href="images/apple-touch-icon-76x76.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="152x152" href="images/apple-touch-icon-152x152.png" />
+  <link rel="icon" type="image/png" href="images/favicon-196x196.png" sizes="196x196" />
+  <link rel="icon" type="image/png" href="images/favicon-96x96.png" sizes="96x96" />
+  <link rel="icon" type="image/png" href="images/favicon-32x32.png" sizes="32x32" />
+  <link rel="icon" type="image/png" href="images/favicon-16x16.png" sizes="16x16" />
+  <link rel="icon" type="image/png" href="images/favicon-128.png" sizes="128x128" />
+
   <meta name="Inspire TILES" content="Tile Shop Bundaberg">
-  <link rel="shortcut icon" href="images/favicon.ico" />
+
+  <meta name="msapplication-TileColor" content="#FFFFFF" />
+  <meta name="msapplication-TileImage" content="mstile-144x144.png" />
+  <meta name="msapplication-square70x70logo" content="mstile-70x70.png" />
+  <meta name="msapplication-square150x150logo" content="mstile-150x150.png" />
+  <meta name="msapplication-wide310x150logo" content="mstile-310x150.png" />
+  <meta name="msapplication-square310x310logo" content="mstile-310x310.png" />
   
   <!-- Theme for Chrome M39+ and Android Lollipop -->
   <meta name="theme-color" content="#660099">
@@ -267,16 +302,20 @@
     <div class="content">
       <h3 class="business">ABN: 44 732 558 072</h3>
       <p class="copyright">© Inspire TILES | All Rights Reserved</p>
-      <div
-        class="fb-like"
-        data-href="https://www.facebook.com/inspiretiles/"
-        data-layout="standard"
-        data-action="like"
-        data-size="large"
-        data-show-faces="true"
-        data-share="true"
-        data-colorscheme="dark"
-      >
+      <div class="fb-group">
+        <a href="https://www.facebook.com/inspiretiles/">
+          <img src="images/fb.png" alt="Facebook page" width="65px" height="65px">
+        </a>
+        <div
+          class="fb-like"
+          data-href="https://www.facebook.com/inspiretiles/"
+          data-layout="box_count"
+          data-action="like"
+          data-size="small"
+          data-share="true"
+          data-colorscheme="dark"
+        >
+        </div>
       </div>
     </div>
   </footer>
